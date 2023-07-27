@@ -1,0 +1,135 @@
+.app {
+    height: 2cm;
+    width: 200vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: wrap;
+
+    .border {
+        border-width: 10px;
+        border-color: black;
+        border-style: solid;
+        width: 320px;
+        height: 480px;
+      }
+      .borderR {
+        position: absolute;
+        top: 350px;
+        left: 1250px;
+        border-width: 10px;
+        border-color: red;
+        border-style: solid;
+        width: 100px;
+        height: 100px;
+      }
+      .borderB {
+        position: absolute;
+        top: 350px;
+        left: 1400px;
+        border-width: 10px;
+        border-color: blue;
+        border-style: solid;
+        width: 100px;
+        height: 100px;
+      }
+    
+    .addHome {
+      padding: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+      border: none;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+    }
+    .addHome2 {
+      padding: 10px;
+      margin-bottom: 50px;
+      cursor: pointer;
+      border: none;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+      align-items: bottom;
+      position : fixed;
+      bottom : 0;
+    }
+  
+  
+    h1 {
+      margin-bottom: 50px;
+    }
+  
+    .books {
+      display: flex;
+      
+      .book {
+       
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+       
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+        }
+  
+        button {
+          padding: 3px 6px;
+          background-color: white;
+          cursor: pointer;
+        }
+        .delete {
+          border: 1px solid rgb(245, 191, 191);
+          color: rgb(242, 100, 100);
+        }
+        .update {
+          border: 1px solid rgb(204, 204, 243);
+          color: rgb(139, 139, 234);
+        }
+      }
+      
+    }
+    .book2 {
+        flex: 1;
+        padding: 100px;
+         margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        gap: 100px;
+        
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      input {
+        width: 250px;
+        padding: 10px;
+        border: 1px solid gray;
+      }
+  
+      textarea {
+        padding: 10px;
+      }
+  
+      button {
+        border: none;
+        padding: 10px;
+        background-color: white;
+        background-color: teal;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+    }
+  }
